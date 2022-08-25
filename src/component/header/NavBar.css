@@ -1,0 +1,13 @@
+.outside-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+}
+.portfolio-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+  margin: 0.5em;
+}
