@@ -1,9 +1,9 @@
 // src/App.js
 import "./App.css";
-import Navbar from "./component/header/NavBar";
+import MainPage from "./component/mainPage/MainPage";
 
 function App() {
-  return <Navbar />;
+  return <MainPage />;
 }
 
 export default App;

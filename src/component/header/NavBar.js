@@ -6,11 +6,13 @@ import "./NavBar.css";
 export default function Navbar() {
   return (
     <section id="NavBar">
-      <div className="outside-container">
-        <div className="portfolio-name">logo</div>
-        <div className="portfolio-name">About Me</div>
-        <div className="portfolio-name">Publication</div>
-        <div className="portfolio-name">Academic</div>
+      <div className="navbar-container">
+        <a href="#home" className="">
+          logo
+        </a>
+        <a href="#about">About Me</a>
+        <a href="#publication">Publication</a>
+        <a href="#academic">Academic</a>
       </div>
     </section>
   );
