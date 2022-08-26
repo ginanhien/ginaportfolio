@@ -8,6 +8,7 @@ export default function Navbar({
   sectionAboutInView,
   sectionAcademicInView,
   sectionPublicationInView,
+  sectionExperienceInView,
 }) {
   return (
     <section id="NavBar">
@@ -18,14 +19,20 @@ export default function Navbar({
         <a href="#about" className={sectionAboutInView ? "active" : ""}>
           About Me
         </a>
+        <a href="#academic" className={sectionAcademicInView ? "active" : ""}>
+          Academic
+        </a>
+        <a
+          href="#experience"
+          className={sectionExperienceInView ? "active" : ""}
+        >
+          Experiences
+        </a>
         <a
           href="#publication"
           className={sectionPublicationInView ? "active" : ""}
         >
           Publication
-        </a>
-        <a href="#academic" className={sectionAcademicInView ? "active" : ""}>
-          Academic
         </a>
       </div>
     </section>

@@ -13,6 +13,9 @@ export default function MainPage() {
   const [sectionPublication, sectionPublicationInView] = useInView({
     threshold: 0.5,
   });
+  const [sectionExperience, sectionExperienceInView] = useInView({
+    threshold: 0.5,
+  });
   return (
     <>
       <Navbar
@@ -20,6 +23,7 @@ export default function MainPage() {
         sectionPublicationInView={sectionPublicationInView}
         sectionAboutInView={sectionAboutInView}
         sectionAcademicInView={sectionAcademicInView}
+        sectionExperienceInView={sectionExperienceInView}
       />
       <section id="home" ref={sectionHome}>
         <div class="container reveal">
@@ -29,6 +33,59 @@ export default function MainPage() {
       <section id="about" ref={sectionAbout}>
         <div class="container reveal">
           <h2>About</h2>
+          <div class="text-container">
+            <div class="text-box">
+              <h3>Section Text</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                eius molestiae perferendis eos provident vitae iste. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Quam blanditiis,
+                officiis, voluptate quisquam aperiam nobis est, quis neque esse
+                soluta dolores iste sit corrupti! Magnam, delectus qui. Odit,
+                accusamus doloremque.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex est
+                rerum id quis eaque rem suscipit reprehenderit quaerat vero
+                nesciunt?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatum, eaque voluptatibus. Eaque tempore quam nesciunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                adipisci blanditiis assumenda atque officiis? Vel, fuga facilis
+                quia reprehenderit nihil optio harum. Quo sapiente veniam atque
+                corporis tempora non repellat?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="academic" ref={sectionAcademic}>
+        <div class="container reveal">
+          <h2>Academic</h2>
+          <div class="text-container">
+            <div class="text-box">
+              <h3>Section Text</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="text-box">
+              <h3>Section Text</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience" ref={sectionExperience}>
+        <div class="container reveal">
+          <h2>Experiences</h2>
           <div class="text-container">
             <div class="text-box">
               <h3>Section Text</h3>
@@ -81,27 +138,6 @@ export default function MainPage() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
                 eius molestiae perferendis eos provident vitae iste.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="academic" ref={sectionAcademic}>
-        <div class="container reveal">
-          <h2>Academic</h2>
-          <div class="text-container">
-            <div class="text-box">
-              <h3>Section Text</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="text-box">
-              <h3>Section Text</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
         </div>
