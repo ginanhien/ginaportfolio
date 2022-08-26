@@ -3,22 +3,30 @@
 import React from "react";
 import "./MainPage.css";
 import Navbar from "../header/NavBar.js";
-//import { useInView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 export default function MainPage() {
-  // const [sectionHome, sectionHomeInView] = useInView({ threshold: 0.5 });
-  //   const [sectionAbout, sectionAboutInView] = useInView({ threshold: 0.5 });
-  //   const [sectionAcademic, sectionAcademicInView] = useInView({
-  //     threshold: 0.5,
-  //   });
+  const [sectionHome, sectionHomeInView] = useInView({ threshold: 0.5 });
+  const [sectionAbout, sectionAboutInView] = useInView({ threshold: 0.5 });
+  const [sectionAcademic, sectionAcademicInView] = useInView({
+    threshold: 0.5,
+  });
+  const [sectionPublication, sectionPublicationInView] = useInView({
+    threshold: 0.5,
+  });
   return (
     <>
-      <Navbar />
-      <section id="home">
+      <Navbar
+        sectionHomeInView={sectionHomeInView}
+        sectionPublicationInView={sectionPublicationInView}
+        sectionAboutInView={sectionAboutInView}
+        sectionAcademicInView={sectionAcademicInView}
+      />
+      <section id="home" ref={sectionHome}>
         <div class="container reveal">
           <h1>Watch the Nav Bar as you Scroll Down &#8595;</h1>
         </div>
       </section>
-      <section id="about">
+      <section id="about" ref={sectionAbout}>
         <div class="container reveal">
           <h2>About</h2>
           <div class="text-container">
@@ -49,9 +57,9 @@ export default function MainPage() {
           </div>
         </div>
       </section>
-      <section id="publication">
+      <section id="publication" ref={sectionPublication}>
         <div class="container reveal">
-          <h2>Services</h2>
+          <h2>Publication</h2>
           <div class="text-container">
             <div class="text-box">
               <h3>Section text</h3>
@@ -77,9 +85,9 @@ export default function MainPage() {
           </div>
         </div>
       </section>
-      <section id="academic">
+      <section id="academic" ref={sectionAcademic}>
         <div class="container reveal">
-          <h2>Contact</h2>
+          <h2>Academic</h2>
           <div class="text-container">
             <div class="text-box">
               <h3>Section Text</h3>
