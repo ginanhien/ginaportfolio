@@ -20,7 +20,8 @@ section {
   background-image: linear-gradient(#e55d87, #5fc3e4);
 }
 #home {
-  background: #e0ffff;
+  /* background-image: linear-gradient(#77c9d4, #57bc90); */
+  background: #42455a;
 }
 #academic {
   background: #e0ffff;
@@ -28,7 +29,7 @@ section {
 #experience {
   background: plum;
 }
-#publications {
+#publication {
   background: #e0ffff;
 }
 section .container {

@@ -5,6 +5,6 @@ fieldset {
   padding: 20px;
 }
 .headline-container h1 {
-  font-size: 5em;
+  font: 6em Ramona;
   padding-inline: 0.5em 0.5em;
 }

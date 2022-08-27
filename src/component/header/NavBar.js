@@ -12,20 +12,33 @@ export default function Navbar({
 }) {
   return (
     <div className="navbar-container">
-      <a href="#home" className={sectionHomeInView ? "active" : ""}>
+      <a href="#home" id="home" className={sectionHomeInView ? "active" : ""}>
         logo
       </a>
-      <a href="#about" className={sectionAboutInView ? "active" : ""}>
+      <a
+        href="#about"
+        id={sectionAboutInView ? "about" : ""}
+        className={sectionAboutInView ? "active" : ""}
+      >
         About Me
       </a>
-      <a href="#academic" className={sectionAcademicInView ? "active" : ""}>
+      <a
+        href="#academic"
+        id={sectionAcademicInView ? "academic" : ""}
+        className={sectionAcademicInView ? "active" : ""}
+      >
         Academic
       </a>
-      <a href="#experience" className={sectionExperienceInView ? "active" : ""}>
+      <a
+        href="#experience"
+        id={sectionExperienceInView ? "experience" : ""}
+        className={sectionExperienceInView ? "active" : ""}
+      >
         Experiences
       </a>
       <a
         href="#publication"
+        id={sectionPublicationInView ? "publication" : ""}
         className={sectionPublicationInView ? "active" : ""}
       >
         Publication
