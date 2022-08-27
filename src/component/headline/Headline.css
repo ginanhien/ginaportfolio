@@ -1,0 +1,10 @@
+fieldset {
+  margin: auto;
+  border: 10px solid black;
+  width: max-content;
+  padding: 20px;
+}
+.headline-container h1 {
+  font-size: 5em;
+  padding-inline: 0.5em 0.5em;
+}

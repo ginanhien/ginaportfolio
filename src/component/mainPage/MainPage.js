@@ -9,6 +9,7 @@ import Experience from "../experience/Experience";
 import About from "../about/About";
 import Navbar from "../header/NavBar.js";
 import Academic from "../academic/Academic";
+import Headline from "../headline/Headline";
 export default function MainPage() {
   const [sectionHome, sectionHomeInView] = useInView({ threshold: 0.5 });
   const [sectionAbout, sectionAboutInView] = useInView({ threshold: 0.5 });
@@ -31,9 +32,7 @@ export default function MainPage() {
         sectionExperienceInView={sectionExperienceInView}
       />
       <section id="home" ref={sectionHome}>
-        <div class="container reveal">
-          <h1>Watch the Nav Bar as you Scroll Down &#8595;</h1>
-        </div>
+        <Headline />
       </section>
       <section id="about" ref={sectionAbout}>
         <About />

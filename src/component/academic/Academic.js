@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./Academic.css";
-export default function Academic({}) {
+export default function Academic() {
   return (
     <>
       <div class="section-academic-container">
