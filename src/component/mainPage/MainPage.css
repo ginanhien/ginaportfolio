@@ -17,6 +17,7 @@ section {
   align-items: center;
 }
 #about {
+  background-image: linear-gradient(#e55d87, #5fc3e4);
 }
 #home {
   background: #e0ffff;
