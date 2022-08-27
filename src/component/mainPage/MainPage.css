@@ -17,20 +17,21 @@ section {
   align-items: center;
 }
 #about {
-  background-image: linear-gradient(#e55d87, #5fc3e4);
+  background: #857a9d;
 }
 #home {
-  /* background-image: linear-gradient(#77c9d4, #57bc90); */
-  background: #42455a;
+  /* background-image: linear-gradient(#7a9d96, #cae4db); */
+  background-image: radial-gradient(#7a9d96, #cae4db);
+  /* background: #874c62; */
 }
 #academic {
-  background: #e0ffff;
+  background: #9d7a81;
 }
 #experience {
-  background: plum;
+  background: #939d7a;
 }
 #publication {
-  background: #e0ffff;
+  background: #a7b3a5;
 }
 section .container {
   margin: 100px;

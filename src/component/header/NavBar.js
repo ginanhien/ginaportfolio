@@ -12,7 +12,11 @@ export default function Navbar({
 }) {
   return (
     <div className="navbar-container">
-      <a href="#home" id="home" className={sectionHomeInView ? "active" : ""}>
+      <a
+        href="#home"
+        id={sectionHomeInView ? "home" : ""}
+        className={sectionHomeInView ? "active" : ""}
+      >
         logo
       </a>
       <a
