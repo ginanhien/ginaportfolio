@@ -1,17 +1,17 @@
-.section-about-container {
-  color: white;
+.section-academic-container {
+  color: black;
 }
 
-.section-about-container h1 {
+.section-academic-container h1 {
   font-size: 3rem;
   margin: 20px;
 }
-.section-about-container h2 {
+.section-academic-container h2 {
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
 }
-.section-about-container .text-container {
+.section-academic-container.text-container {
   display: flex;
 }
 .text-container .text-box {

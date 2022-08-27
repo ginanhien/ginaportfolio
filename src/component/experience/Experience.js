@@ -6,7 +6,7 @@ import "./Experience.css";
 export default function Experience({}) {
   return (
     <>
-      <div className="section-container">
+      <div className="section-experience-container">
         <h2>Experiences</h2>
         <div class="text-container">
           <div class="text-box">

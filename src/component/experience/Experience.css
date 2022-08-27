@@ -1,17 +1,17 @@
-.section-container {
+.section-experience-container {
   color: white;
 }
 
-.section-container h1 {
+.section-experience-container h1 {
   font-size: 3rem;
   margin: 20px;
 }
-.section-container h2 {
+.section-experience-container h2 {
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
 }
-.text-container {
+.section-experience-container .text-container {
   display: flex;
 }
 .text-container .text-box {

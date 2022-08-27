@@ -8,6 +8,7 @@ import { useInView } from "react-intersection-observer";
 import Experience from "../experience/Experience";
 import About from "../about/About";
 import Navbar from "../header/NavBar.js";
+import Academic from "../academic/Academic";
 export default function MainPage() {
   const [sectionHome, sectionHomeInView] = useInView({ threshold: 0.5 });
   const [sectionAbout, sectionAboutInView] = useInView({ threshold: 0.5 });
@@ -39,25 +40,7 @@ export default function MainPage() {
       </section>
 
       <section id="academic" ref={sectionAcademic}>
-        <div class="section-container">
-          <h2>Academic</h2>
-          <div class="text-container">
-            <div class="text-box">
-              <h3>Section Text</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="text-box">
-              <h3>Section Text</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
+        <Academic />
       </section>
       <section id="experience" ref={sectionExperience}>
         <Experience />
