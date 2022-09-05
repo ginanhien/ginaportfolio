@@ -1,0 +1,27 @@
+.section-academic-container {
+  color: black;
+}
+
+.section-academic-container h1 {
+  font-size: 3rem;
+  margin: 20px;
+}
+.section-academic-container h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-academic-container.text-container {
+  display: flex;
+}
+.text-container .text-box {
+  margin: 20px;
+  padding: 20px;
+  background: #00c2cb;
+}
+.text-container .text-box h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

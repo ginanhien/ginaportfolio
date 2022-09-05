@@ -1,0 +1,27 @@
+.section-about-container {
+  color: white;
+}
+
+.section-about-container h1 {
+  font-size: 3rem;
+  margin: 20px;
+}
+.section-about-container h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-about-container .text-container {
+  display: flex;
+}
+.text-container .text-box {
+  margin: 20px;
+  padding: 20px;
+  background: #00c2cb;
+}
+.text-container .text-box h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
